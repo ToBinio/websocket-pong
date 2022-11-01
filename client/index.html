@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+</head>
+<body>
+<h1>Pong</h1>
+<hr>
+<div id="login">
+    <label for="player">Player:</label>
+    <select id="player">
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+    <button id="send">send</button>
+</div>
+
+<div id="game" class="hidden">
+    <div id="score">0 | 0</div>
+    <canvas id="canvas" width="800px" height="600px">
+    </canvas>
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
